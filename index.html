@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://kit.fontawesome.com/14d09a082c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo d-flex">
+
+      <img src="Vector.svg" class="icon mx-2 " alt="">
+      <div class="logo_details my-5 ">
+
+        <div class="logo_name">logohere</div>
+      </div>
+    </div>
+
+    <ul class="nav-list">
+
+      <li>
+        <a href="#">
+          <i class="bx bx-grid-alt" style="color: black;"></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-user " style="color: black;"></i>
+          <span class="link_name">Calender</span>
+        </a>
+        <span class="tooltip">Calender</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-chat" style="color: black;"></i>
+          <span class="link_name">Project</span>
+        </a>
+        <span class="tooltip">Project</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-pie-chart-alt-2" style="color: black;"></i>
+          <span class="link_name">Team</span>
+        </a>
+        <span class="tooltip">Team</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="bx bx-cog" style="color: black;"></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltip">Settings</span>
+      </li>
+      <i class="bx bx-menu" id="btn" style="color: black;"></i>
+
+    </ul>
+  </div>
+
+
+
+  <!-- nav section  -->
+
+  <section class="home-section">
+    <div class="topnav  d-flex ">
+
+      <div class="search-container">
+
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Search</button>
+
+      </div>
+      <div class="profile">
+        <p class="prof-title">Jane Cooper</p>
+        <img class="rounded-circle prof " src="profile.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- end of nav section  -->
+
+  
+<div class="container-fluid">
+  <div class="home-section2 ">
+    <div class="row ">
+      <div class="mt-4 d-flex mx-4 card1">
+        
+        <!-- left section  -->
+
+        <div class="col-sm-10">
+
+          <!-- row 1 -->
+
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-sm-2 ">
+              <div class="card" style="width: 12rem;">
+                <div class="card-body ">
+                  <div class="head d-flex justify-content-between">
+                    <p class="card-title">Monthly Working Hours</p>
+                    <i class="fas fa-calendar-week"></i>
+
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted abc">160</h6>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="card" style="width: 12rem; ">
+                <div class="card-body">
+                  <div class="head d-flex justify-content-between">
+                    <p class="card-title">Weekly Working Hours</p>
+                    <i class="fas fa-clock"></i>
+
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">40</h6>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="card" style="width: 12rem; ">
+                <div class="card-body">
+                  <div class="head d-flex justify-content-between">
+                    <p class="card-title">Late Days</p>
+                    <i class="fas fa-running"></i>
+
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">2</h6>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="card" style="width: 12rem; ">
+                <div class="card-body">
+                  <div class="head d-flex justify-content-between">
+                    <p class="card-title">Leave Without Pay</p>
+                    <i class="far fa-frown"></i>
+
+                  </div>
+                  <h6 class="card-subtitle mb-2 text-muted">9</h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end of row1 -->
+
+          <!-- row2 -->
+          
+          <div class="row mt-5 mb-4 ">
+            <div class="col-sm-4">
+              <div class="row-2">
+
+                <div class="head">Leaves Remaining</div>
+                <div class="count1">10</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row-2">
+
+                <div class="head">Leaves Taken</div>
+                <div class="count2">06</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="head">Leaves pending to approve</div>
+              <div class="count3">01</div>
+            </div>
+
+          </div>
+
+          <!-- end of row2  -->
+
+
+          <!-- row3 -->
+          <div class="row mt-4">
+            <div class="col-sm-7">
+              <div class="title">
+                <h5>Employee on leave today</h5>
+              </div>
+              <table class="table bg-white mt-4 table-responsive">
+                <thead class=" first-table">
+                  <tr>
+                    <th class="p-3" scope="col">Name</th>
+                    <th class="p-3" scope="col">Duration</th>
+                    <th class="p-3" scope="col">Leave Status</th>
+                    <th class="p-3" scope="col">Leave ends</th>
+                    <th class="p-3" scope="col">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>3.00 days</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>3.00 days</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>3.00 days</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>3.00 days</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>3.00 days</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                    <td>12/01/2023</td>
+                  </tr>
+
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="text-primary " style="text-align: center;" colspan="5">view all</td>
+
+
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            
+
+            <div class="col-sm-5">
+              <h5>Conversations </h5>
+              <div class="container mt-4">
+                <div class="d-flex">
+                  <div class="col">
+                    <div class="title d-flex justify-content-between mb-3">
+                      <div class="text-primary">Latest Chats</div>
+                      <div class="text-muted ">Scheduled posts</div>
+                      <div class="text-center" style="font-size: larger;">...</div>
+                    </div>
+                    <div class="d-flex flex-column comment-section">
+                      <div class="bg-white p-2">
+                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="Rectangle 627.png"
+                            width="40">
+                          <div class="d-flex flex-column justify-content-start ml-2"><span
+                              class="d-block font-weight-bold name">Yatri Patel</span> </div>
+                        </div>
+                        <div class="mt-2">
+                          <p class="comment-text">The tasks which we submitted yesterday requires design...</p>
+                        </div>
+                      </div>
+                      <div class="bg-white">
+                        <div class="d-flex flex-row fs-12">
+                          <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span class="ml-1">585</span>
+                          </div>
+                          <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">58</span>
+                          </div>
+                          <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">102</span></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="d-flex flex-column comment-section">
+                      <div class="bg-white p-2">
+                        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="Rectangle 628.png"
+                            width="40">
+                          <div class="d-flex flex-column justify-content-start ml-2"><span
+                              class="d-block font-weight-bold name">Kinnari Patel</span> </div>
+                        </div>
+                        <div class="mt-2">
+                          <p class="comment-text">The tasks which we submitted yesterday requires design...</p>
+                        </div>
+                      </div>
+                      <div class="bg-white">
+                        <div class="d-flex flex-row fs-12">
+                          <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span class="ml-1">29</span>
+                          </div>
+                          <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">55</span>
+                          </div>
+                          <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">21</span></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="end text-center mt-3 text-primary">View all</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end of row3 -->
+
+
+          <!-- row4 -->
+
+          <div class="row table-responsive mt-5">
+            <div class="col-sm-12">
+              <div class="title">
+                <h5>Assigned Tasks</h5>
+              </div>
+              <table class="table bg-white mt-4  ">
+                <thead class=" first-table">
+                  <tr>
+                    <th class="p-3" scope="col">Task  Name</th>
+                    <th class="p-3" scope="col">Date</th>
+                    <th class="p-3" scope="col">Logged Hours</th>
+                    <th class="p-3" scope="col">Task Efficiency</th>
+                    <th class="p-3" scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Magento-VP file-edits</td>
+                    <td>02 Jan 2023</td>
+                    <td>04:00 hrs</td>
+                    <td>100%</td>
+                    <td class="action1 ">...</td>
+                  </tr>
+                  <tr>
+                    <td>Magento-VP file-edits</td>
+                    <td>02 Jan 2023</td>
+                    <td>04:00 hrs</td>
+                    <td>100%</td>
+                    <td class="action1 ">...</td>
+                  </tr>
+                  <tr>
+                    <td>Magento-VP file-edits</td>
+                    <td>02 Jan 2023</td>
+                    <td>04:00 hrs</td>
+                    <td>100%</td>
+                    <td class="action1 ">...</td>
+                  </tr>
+
+                  
+                   
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="text-primary " style="text-align: center;" colspan="5">view all</td>
+
+
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            
+
+            
+          </div>
+
+
+          <!-- end of row4 -->
+        </div>
+
+
+        <!-- end of left section  -->
+
+        <!-- right section  -->
+
+        <div class="col-sm-auto main-left">
+
+          <table class="table bg-white">
+            <thead class=" first-table">
+              <tr class="d-flex justify-content-between">
+                <th class="" scope="col">Birthdays Today </th>
+                <th><i class="fa-solid fa-cake-candles" style="font-size: larger;"></i></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="d-flex ">
+                  <div class="bday-img"><img src="Ellipse 121.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Shubham Mehta</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex ">
+                  <div class="bday-img"><img src="palak.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Shubham Mehta</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                </td>
+              </tr>
+
+
+            </tbody>
+
+          </table>
+
+
+
+          <table class="table bg-white">
+            <thead class="second-table">
+              <tr class="d-flex justify-content-between">
+                <th>Work Anniversary</th>
+                <th><img src="party.svg" alt=""></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="d-flex justify-content-between">
+                  <div class="bday-img"><img src="t21.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Suraj Kushwaha</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                  <div class="align-self-center year">1 year</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex justify-content-between">
+                  <div class="bday-img"><img src="t22.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Vishal Prajapati</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                  <div class="align-self-center year">2 year</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex justify-content-between">
+                  <div class="bday-img"><img src="t23.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Uttam Vora</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                  <div class="align-self-center year">3 year</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex justify-content-between">
+                  <div class="bday-img"><img src="t24.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Suraj Kushwaha</p>
+                    <p class="bday-detail">UX/UI Designer</p>
+                  </div>
+                  <div class="align-self-center year">3 year</div>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+          <table class="table bg-white">
+            <thead class="second-table">
+              <tr class="d-flex justify-content-between">
+                <th>Holidays</th>
+                <th><img src="holiday.svg" alt=""></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="d-flex">
+                  <div class="bday-img"><img src="uttarayan.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Uttrayan</p>
+                    <p class="bday-detail text-muted">14 Jan 2023 | Friday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex  ">
+                  <div class="bday-img"><img src="uttarayan.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Vashi Uttrayan</p>
+                    <p class="bday-detail text-muted">15 Jan 2023 | Friday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex  ">
+                  <div class="bday-img"><img src="republic day.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Republic Day</p>
+                    <p class="bday-detail text-muted">26 Jan 2023 | Wednesday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex ">
+                  <div class="bday-img"><img src="holi.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Holi</p>
+                    <p class="bday-detail text-muted">18 March 2023 | Friday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex  ">
+                  <div class="bday-img"><img src="rakhi.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Rakshabandhan</p>
+                    <p class="bday-detail text-muted">11 Aug 2023 | Thursday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex  ">
+                  <div class="bday-img"><img src="republic day.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Republic Day</p>
+                    <p class="bday-detail text-muted">26 Jan 2023 | Wednesday</p>
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="d-flex ">
+                  <div class="bday-img"><img src="holi.svg" alt=""></div>
+                  <div>
+                    <p class="bday-name">Holi</p>
+                    <p class="bday-detail text-muted">18 March 2023 | Friday</p>
+                  </div>
+
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+
+        </div>
+
+        <!-- end of right section  -->
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
